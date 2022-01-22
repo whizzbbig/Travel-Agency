@@ -1,0 +1,51 @@
+/*------------------*
+# Variables
+*------------------*/
+
+/*
+ * This file includes default variables to get going quickly on a project.
+ * File includes:
+ * - Base font family
+ * - Base font sizes
+ * - Heading spacing
+ * - Paragraph spacing
+ * - Base line height
+ * - Base colors
+*/
+
+/*
+ * Base font family
+*/
+
+$base-font-family: Arial, sans-serif !default;
+
+/*
+ * Base font sizes
+*/
+
+$base-font-size: 62.5%;
+
+/*
+ * Heading spacing
+*/
+
+$heading-spacing: 25px 0 10px !default;
+
+/*
+ * Paragraph spacing
+*/
+
+$paragraph-spacing: 0 0 25px !default;
+
+/*
+ * Base line height
+*/
+
+$base-line-height: 1.5 !default;
+
+/*
+ * Base colors
+*/
+
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
