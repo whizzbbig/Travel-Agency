@@ -17,6 +17,7 @@
         "gulp-autoprefixer": "^6.1.0",
         "gulp-babel": "^8.0.0",
         "gulp-concat": "^2.6.1",
+        "gulp-font2css": "^0.1.2",
         "gulp-htmlmin": "^5.0.1",
         "gulp-imagemin": "^7.1.0",
         "gulp-nunjucks-render": "^2.2.3",

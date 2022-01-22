@@ -14,10 +14,11 @@
 */
 
 /*
- * Base font family
+ * font family
 */
 
-$base-font-family: Arial, sans-serif !default;
+$sansation: 'sansation';
+
 
 /*
  * Base font sizes
@@ -44,8 +45,10 @@ $paragraph-spacing: 0 0 25px !default;
 $base-line-height: 1.5 !default;
 
 /*
- * Base colors
+ * Colors
 */
 
-$color-white: #ffffff !default;
-$color-black: #000000 !default;
+$color-white: #F2F5FF;
+$color-black: #0A0908;
+$rangoon-green-color: #10100E;
+$cod-gray-color: #090909;

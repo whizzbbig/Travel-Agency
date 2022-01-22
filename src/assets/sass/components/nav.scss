@@ -1,3 +1,26 @@
 /*------------------*
 # Nav
 *------------------*/
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 5rem;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+      margin-left: 3%;
+      cursor: pointer;
+    }
+
+    &__links {
+      right: 5%;
+      position: absolute;
+
+      &__cta:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+  }

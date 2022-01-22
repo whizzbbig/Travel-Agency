@@ -1,0 +1,260 @@
+header {
+  .container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    background-color: $rangoon-green-color;
+    width: 50%;
+
+    &__intro {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+      bottom: 4%;
+
+      &__heading {
+        top: 20%;
+        font-size: 94px;
+        text-transform: uppercase;
+        position: absolute;
+        font-weight: 100;
+        width: 55%;
+        text-align: left;
+        margin-left: 10rem;
+        z-index: 10;
+
+        &-span {
+          left: 5%;
+          font-weight: bold;
+          z-index: 10;
+        }
+      }
+
+      &__secondary-heading {
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 10;
+        letter-spacing: 7.5px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: -1%;
+          top: -0.5em;
+          width: 43vh;
+          height: 200%;
+          background: $color-black;
+          z-index: -1;
+        }
+      }
+
+      &-cta {
+        font-size: 2.4rem;
+        position: absolute;
+        top: 80%;
+        margin-left: 5%;
+        color: $color-white;
+        transition: all ease 0.5s;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          left: -200px;
+          width: 48vh;
+          height: 25vh;
+          background: #0a0908;
+          z-index: -1;
+          transition: all ease 0.5s;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 1.2em;
+          left: 0;
+          width: 9rem;
+          height: 3px;
+          background: $color-white;
+          z-index: -1;
+        }
+
+        &-hover {
+          transition: all ease 0.5s;
+          color: $color-black;
+
+          &:hover::before {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: -173px;
+            width: 45vh;
+            height: 65.3vh;
+            background: #ca3cff;
+            z-index: -1;
+            transition: all ease 0.5s;
+          }
+
+          &:hover::after {
+            content: '';
+            position: absolute;
+            top: 1.2em;
+            left: 0;
+            width: 9rem;
+            height: 3px;
+            background: $color-black;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    background: url(/images/illustration.svg) no-repeat;
+    background-position: 125% 0%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 69em;
+      width: 32.8%;
+      height: 30%;
+      background: $color-black;
+      z-index: 0;
+      transition: all 0.5s ease;
+    }
+
+    &__img {
+      z-index: 5;
+      position: absolute;
+      top: 15%;
+      left: 32%;
+    }
+  }
+  .right-hover {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 69em;
+      width: 32.8%;
+      height: 65.3vh;
+      background: #ffd23f;
+      z-index: 0;
+      transition: all ease 0.5s;
+    }
+  }
+}
+
+@keyframes drug-color {
+  0% {
+    color: $color-white;
+  }
+
+  10% {
+    color: $color-white;
+  }
+
+  20% {
+    color: $color-black;
+  }
+
+  30% {
+    color: #7121ff;
+  }
+
+  40% {
+    color: $color-white;
+  }
+
+  50% {
+    color: $color-black;
+  }
+
+  60% {
+    color: $color-black;
+  }
+
+  70% {
+    color: #ea1821;
+  }
+
+  80% {
+    color: $color-black;
+  }
+
+  90% {
+    color: #cae9bf;
+  }
+
+  100% {
+    color: $color-white;
+  }
+}
+
+@keyframes drug-background {
+  0% {
+    background-color: #a54dd4;
+  }
+
+  10% {
+    background-color: #8536ca;
+  }
+
+  20% {
+    background-color: #db5d9f;
+  }
+
+  30% {
+    background-color: #e3d3ff;
+  }
+
+  40% {
+    background-color: #0e38b1;
+  }
+
+  50% {
+    background-color: #ef3e4a;
+  }
+
+  60% {
+    background-color: #7eceff;
+  }
+
+  70% {
+    background-color: #1b1d1c;
+  }
+
+  80% {
+    background-color: #fbfe56;
+  }
+
+  90% {
+    background-color: #9c9cdd;
+  }
+
+  100% {
+    background-color: #a54dd4;
+  }
+}
+
+
+.drug-background {
+    animation: drug-background .5s linear infinite;
+    transition: all .2s ease-in-out;
+}
+
+.drug-color {
+    animation: drug-color .5s linear infinite;
+    transition: all .2s ease-in-out;
+}

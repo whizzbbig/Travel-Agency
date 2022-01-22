@@ -1,17 +1,6 @@
 /*------------------*
 # Base
 *------------------*/
-
-html {
-    box-sizing: border-box;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: 1.5;
-    overflow-y: scroll;
-    min-height: 100%;
-    word-wrap: break-word;
-}
-
 * {
     &,
     &:before,
@@ -20,14 +9,35 @@ html {
     }
 }
 
-body {
-    align-items: stretch;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-    min-height: 100vh;
+html {
+    box-sizing: border-box;
+    font-size: $base-font-size;
+    word-wrap: break-word;
+    overflow-y: scroll;
     overflow-x: hidden;
-    position: relative;
-    width: 100%;
 }
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: $sansation;
+    background-color: $color-black;
+    color: $color-white;
+    transition: all .3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1 {
+    margin: 0;
+  }
