@@ -8,7 +8,4 @@
 # Node modules
 node_modules
 
-# Dist
-dist
-
 gulp.cmd
