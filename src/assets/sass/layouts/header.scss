@@ -250,11 +250,27 @@ header {
 
 
 .drug-background {
-    animation: drug-background .5s linear infinite;
+    animation: drug-background .5s step-start infinite;
     transition: all .2s ease-in-out;
 }
 
 .drug-color {
-    animation: drug-color .5s linear infinite;
+    animation: drug-color .5s step-start infinite;
     transition: all .2s ease-in-out;
+
+    &-1 {
+        animation-duration: 1s;
+    }
+
+    &-2 {
+        animation-duration: 1.5s;
+    }
+
+    &-3 {
+        animation-duration: 2s;
+    }
+
+    &-4 {
+        animation-duration: 2.5s;
+    }
 }
