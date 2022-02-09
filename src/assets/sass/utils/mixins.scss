@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@mixin Trippy($_id, $_colors) {
+@mixin Trippy($_id, $_property, $_colors) {
   $steps: length($_colors);
   $single-step: math.div(100%, $steps - 1);
 
@@ -9,12 +9,12 @@
       $current-stop: $single-step * $i;
 
       #{$current-stop} {
-        background-color: nth($_colors, $i + 1);
+        #{$_property}: nth($_colors, $i + 1);
       }
     }
 
     100% {
-      background-color: nth($_colors, $steps);
+      #{$_property}: nth($_colors, $steps);
     }
   }
 }
@@ -38,6 +38,6 @@
   }
 }
 
-@include Trippy(1, $ecstasy);
-@include Trippy(2, $molly);
-@include LoveDrug(1, $sweets);
+@include Trippy(1, background-color, $ecstasy);
+@include Trippy(2, color, $sweets);
+@include Trippy(3, background-color, $molly); // @include LoveDrug(1, $sweets);

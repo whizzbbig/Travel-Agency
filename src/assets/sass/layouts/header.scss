@@ -15,14 +15,6 @@ header {
       width: 0;
     }
 
-    @include media('>phone', '<=tablet') {
-      background-color: red;
-    }
-
-    @include media('>phone', '<=520px') {
-      background-color: blue;
-    }
-
     &__intro {
       width: 100%;
       height: 100%;
@@ -226,7 +218,7 @@ header {
       @include media('<=689px') {
         width: 65vh;
         height: 35vh;
-        animation: Trippy-2 0.5s step-start infinite;
+        animation: Trippy-3 0.5s step-start infinite;
         transition: all 0.2s ease-in-out;
         top: 25.5vh;
       }
@@ -240,7 +232,7 @@ header {
 }
 
 .drug-color {
-  animation: LoveDrug-1 0.5s step-start infinite;
+  animation: Trippy-2 0.5s step-start infinite;
   transition: all 0.2s ease-in-out;
 
   &-1 {
