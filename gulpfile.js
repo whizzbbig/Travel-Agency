@@ -20,6 +20,12 @@ const font2css = require('gulp-font2css').default;
 //     gulp.watch = Watch files and folders for changes
 // */
 
+// Copy all root files to dist
+function copyRoot(cb) {
+  gulp.src('favico/*').pipe(gulp.dest('dist/'));
+  cb();
+}
+
 // Optimise Images
 function imageMin(cb) {
   gulp
@@ -135,7 +141,15 @@ function watch_files() {
 }
 
 // Default 'gulp' command with start local server and watch files for changes.
-exports.default = series(nunjucks, css, js, imageMin, fonts, watch_files);
+exports.default = series(
+  nunjucks,
+  css,
+  js,
+  imageMin,
+  fonts,
+  copyRoot,
+  watch_files
+);
 
 // 'gulp build' will build all assets but not run on a local server.
-exports.build = parallel(nunjucksMinify, css, js, imageMin);
+exports.build = parallel(nunjucksMinify, css, js, imageMin, copyRoot);
