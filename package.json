@@ -8,7 +8,6 @@
     },
     "author": "Kieran Brown",
     "license": "ISC",
-    "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.11.0",
         "@babel/preset-env": "^7.11.0",
@@ -24,6 +23,7 @@
         "gulp-sass": "^5.0.0",
         "gulp-uglify": "^3.0.2",
         "gulp-watch": "^5.0.1",
+        "include-media": "^1.4.10",
         "lodash": "^4.17.21",
         "lodash.mergewith": ">=4.6.2",
         "mixin-deep": "^2.0.1",

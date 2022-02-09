@@ -2,25 +2,38 @@
 # Nav
 *------------------*/
 .navbar {
-    position: absolute;
-    width: 100%;
-    padding: 5rem;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 5rem 10rem;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: z('navigation');
 
-    &__logo {
-      margin-left: 3%;
-      cursor: pointer;
-    }
+  @include media('>phone', '<=689px') {
+    padding: 5rem 3.2rem;
+    flex-direction: column;
+    z-index: 99999;
+  }
 
-    &__links {
-      right: 5%;
+  &__logo {
+    cursor: pointer;
+    @include media('>phone', '<=520px') {
       position: absolute;
-
-      &__cta:not(:last-child) {
-        margin-right: 5rem;
-      }
+      top: 20%;
     }
   }
+
+  &__links {
+    height: 15px;
+    margin-top: 8px;
+    @include media('>phone', '<=520px') {
+      margin-top: 2rem;
+    }
+
+    &__cta:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+}

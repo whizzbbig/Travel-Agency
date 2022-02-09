@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+@mixin Trippy($_id, $_colors) {
+  $steps: length($_colors);
+  $single-step: math.div(100%, $steps - 1);
+
+  @keyframes Trippy-#{$_id} {
+    @for $i from 0 through ($steps - 2) {
+      $current-stop: $single-step * $i;
+
+      #{$current-stop} {
+        background-color: nth($_colors, $i + 1);
+      }
+    }
+
+    100% {
+      background-color: nth($_colors, $steps);
+    }
+  }
+}
+
+@mixin LoveDrug($_id, $_colors) {
+  $steps: length($_colors);
+  $single-step: math.div(100%, $steps - 1);
+
+  @keyframes LoveDrug-#{$_id} {
+    @for $i from 0 through ($steps - 2) {
+      $current-stop: $single-step * $i;
+
+      #{$current-stop} {
+        color: nth($_colors, $i + 1);
+      }
+    }
+
+    100% {
+      color: nth($_colors, $steps);
+    }
+  }
+}
+
+@include Trippy(1, $ecstasy);
+@include Trippy(2, $molly);
+@include LoveDrug(1, $sweets);

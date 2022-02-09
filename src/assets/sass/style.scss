@@ -1,16 +1,20 @@
 // Normalise
-@import "./vendor/normalise";
+@import './vendor/normalise';
+
+// Utils
+@import './utils/variables';
+@import './utils/functions';
+@import './utils/mixins';
+@import './utils/responsive';
 
 // Base
-@import "./base/variables";
-@import "./base/base";
+@import './base/base';
 
 // Components
-@import "./components/nav";
-@import "./components/buttons";
-
+@import './components/nav';
+@import './components/buttons';
 
 // Layouts
-@import "./layouts/header";
-@import "./layouts/footer";
-@import "./layouts/main-content";
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/main-content';

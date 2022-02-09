@@ -1,0 +1,69 @@
+/*------------------*
+# Variables
+*------------------*/
+
+/*
+ * This file includes default variables to get going quickly on a project.
+ * File includes:
+ * - Base font family
+ * - Base font sizes
+ * - Heading spacing
+ * - Paragraph spacing
+ * - Base line height
+ * - Base colors
+*/
+
+/*
+ * font family
+*/
+
+$sansation: 'sansation';
+
+/*
+ * Base font sizes
+*/
+
+$base-font-size: 62.5%;
+$heading-font-size: clamp(2.4rem, 7.29vw + 0.04rem, 9.4rem);
+$button-font-size: clamp(2rem, 1.617vmin + 1.167rem, 2.4rem);
+$secondary_heading-font-size: clamp(0.24rem, 0.417vmin + 1.167rem, 0.75rem);
+
+/*
+ * Heading spacing
+*/
+
+$heading-spacing: 25px 0 10px !default;
+
+/*
+ * Paragraph spacing
+*/
+
+$paragraph-spacing: 0 0 25px !default;
+
+/*
+ * Base line height
+*/
+
+$base-line-height: 1.5 !default;
+
+/*
+ * Colors
+*/
+
+$color-white: #f2f5ff;
+$color-black: #0a0908;
+$rangoon-green-color: #10100e;
+$cod-gray-color: #090909;
+
+// Z-indexes
+$z-indexes: ('heading', 'navigation');
+
+// Trippy Backgrounds
+$ecstasy: #a54dd4, #8536ca, #db5d9f, #e3d3ff, #0e38b1, #ef3e4a, #7eceff, #1b1d1c,
+  #fbfe56, #9c9cdd, #a54dd4;
+
+$molly: white, black, tomato, white, black, blue, white;
+
+// Loving Colors
+$sweets: $color-white, $color-white, $color-black, #7121ff, $color-white,
+  $color-black, $color-black, #ea1821, $color-black, #cae9bf, $color-white;
