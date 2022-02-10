@@ -19,25 +19,6 @@
   }
 }
 
-@mixin LoveDrug($_id, $_colors) {
-  $steps: length($_colors);
-  $single-step: math.div(100%, $steps - 1);
-
-  @keyframes LoveDrug-#{$_id} {
-    @for $i from 0 through ($steps - 2) {
-      $current-stop: $single-step * $i;
-
-      #{$current-stop} {
-        color: nth($_colors, $i + 1);
-      }
-    }
-
-    100% {
-      color: nth($_colors, $steps);
-    }
-  }
-}
-
 @include Trippy(1, background-color, $ecstasy);
 @include Trippy(2, color, $sweets);
 @include Trippy(3, background-color, $molly); // @include LoveDrug(1, $sweets);
